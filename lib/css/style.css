@@ -1,0 +1,27 @@
+﻿/* Main headings */
+.ms-rte-layoutszone-inner > .ms-rteElement-H1 {
+	font-size: 2.5em;
+	margin: 0;
+}
+.ms-rte-layoutszone-inner > .ms-rteElement-H2 {
+	font-size: 1.5em;
+	margin: .5em 0 2em .25em;
+}
+
+/* List items */
+.ms-vb-title a {
+	font-size: 1.33333em;
+}
+.ms-WPHeader .ms-WPTitle {
+	font-size: 1.66667em;
+}
+
+/* Summary links */
+.dfwp-list .link-item a {
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 1.5em;
+}
+.dfwp-list .link-item .description {
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 1.33333em;
+}

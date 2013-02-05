@@ -1,0 +1,290 @@
+/***** Overall layout *****/
+#maincontent *,
+#maincontent *:before,
+#maincontent *:after {
+	box-sizing: border-box;
+}
+
+#maincontent {
+	font-size: 15px;
+	line-height: 1.5;
+	padding: 1em 0 0;
+	width: auto;
+}
+
+#maincontent h1 {
+	color: #21374C;
+	line-height: 1.2;
+	margin-bottom: 1em;
+	text-shadow: .1em .1em .2em rgba(0,0,0,.2);
+}
+#maincontent h2 {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 1.5em;
+}
+#maincontent h3 {
+	margin-top: .66667em;
+	margin-bottom: 0;
+	font-size: 1.5em;
+	font-weight: normal;
+}
+
+header.app-section {
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+.app-section .list-item {
+	margin-left: -40px;
+	margin-bottom: 1.5em;
+	list-style: none;
+}
+
+footer.app-section {
+	border-top: 1px solid #999;
+	padding: 1em 2.25em;
+	background-color: #f8f8f8;
+	color: #999;
+	margin-top: 2em;
+	margin-bottom: 0;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+#app-container {
+	margin-bottom: 4em;
+	overflow-y: auto;
+}
+
+#maincontent img {
+	max-width: 100%;
+	height: auto !important;  /* IE7 */
+	-ms-interpolation-mode: bicubic;  /* IE7 */
+}
+
+#app-side {
+	float: left;
+	width: 18em;
+	max-width: 18em;
+	padding-right: 0;
+	padding-left: 2em;
+}
+#app-side img { width: expression(this.width > 240 ? 240 : true); /* IE7 */ }
+
+.app-view {
+	/*display: none;*/   /* Toggle on/off with JavaScript */
+	margin: 0 2em 1em 20em;
+	overflow-y: auto;
+}
+.app-view-secondary { border-top: 1px solid #ddd; /*padding-top: 2em;*/ }
+.app-view-default {
+	display: block;
+}
+@media ( max-width: 48em ) {
+	#app-side { display: none; }
+	.app-view {
+		float: none;
+		margin-left: 2em;
+		margin-right: 2em;
+	}
+}
+
+
+
+/***** Application-Specific Styles *****/
+#directory-list .contact { list-style: none; }
+/*#directory-list .contact .view { display: block; }*/
+#directory-list .contact.editing,
+.new-contact {
+	/*display: none;*/
+	background-color: #f8f8f8;
+	border: 1px solid #ccc;
+	padding: 1em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+/*
+#directory-list .contact.editing .view { display: none; }
+#directory-list .contact.editing .edit { display: block; }
+*/
+/* Contact form buttons */
+.contact.editing .btn-set { margin-top: 1em; }
+.contact.editing .btn-add { border: 2px solid #080; color: #080; }
+/*.new-contact .btn-update { display: none; }*/
+.contact.editing .btn-update { border: 2px solid #080; color: #080; }
+/*.contact.editing .btn-add { display: none; }*/
+.contact.editing .btn-cancel { border: 1px solid #666; color: #666; }
+.contact.editing .btn-delete { border: 1px solid #a33; color: #a33; float: right; }
+/*.new-contact .btn-delete { display: none; }*/
+
+/* Overlay view styles */
+
+
+
+
+
+/***** Loading indicator *****/
+#app-loading {
+	margin-top: 2em;
+	text-align: center;
+	color: #999;
+}
+
+
+
+/***** Result blocks and tips *****/
+.result-icon,
+.app-tip-icon {
+	color: #ddd;
+	float: left;
+	font-size: 3em;
+	line-height: 1;
+}
+.result-content,
+.app-tip-content {
+	margin-left: 4em;
+}
+.app-tip-icon [class^="icon-"],
+.app-tip-icon [class*=" icon-"] {
+	display: inline-block;
+	width: 1.25em;
+	text-align: center;
+}
+.app-tip {
+	border-top: 1px solid #ddd;
+	margin-top: 2em;
+	margin-bottom: 3em;
+	padding-top: 2em;
+}
+.app-tip p {
+	margin-top: 0;
+}
+.separator { color: #bbb; }
+
+
+
+/***** Status messages *****/
+.app-status {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+.app-status-icon {
+	color: #ccc;
+	float: left;
+	font-size: 1.5em;
+	line-height: 1;
+}
+.app-status-content {
+	margin-left: 2em;
+}
+.app-status-icon [class*=" icon-"] {
+	display: inline-block;
+	width: 1.25em;
+	text-align: center;
+}
+.app-status-container h3 {
+	border-top: 1px solid #ddd;
+	color: #999;
+	padding-top: 1em;
+	padding-left: 1.66667em;
+	margin-top: 2em;
+}
+.app-status p {
+	margin-top: 0;
+}
+
+
+
+/***** On-page navigation (on-page anchors, filtering, etc.) *****/
+.page-nav {
+	background-color: #f8f8f8;
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #999;
+	color: #999;
+	padding: .25em 1.25em;
+	margin-bottom: 2em;
+	line-height: 2;
+}
+.page-nav a {
+	color: #999;
+	text-decoration: none;
+}
+.page-nav a:hover { color: #444; }
+.page-nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.page-nav li {
+	margin: 0 1em;
+	float: left;
+	list-style: none;
+}
+.page-nav .source-link { float: right; }
+.list-search {
+	margin-left: .5em;
+	outline: none;
+	width: 10em;
+}
+
+
+
+/***** Application menu *****/
+.app-menu-icon {
+	cursor: pointer;
+	font-size: 1.2em;
+	line-height: 1.66667;
+}
+.page-nav .app-menu {
+	float: right;
+	position: relative;
+}
+.page-nav .app-menu ul {
+	background-color: #f8f8f8;
+	border: 1px solid #999;
+	color: #999;
+	display: none;
+	position: absolute;
+	right: -.83333em;
+	top: 100%;
+	width: 15em;
+	z-index: 1000;
+}
+.page-nav .app-menu-open ul { display: block; }
+.app-menu-open .app-menu-icon,
+.app-menu-icon:hover { color: #444; }
+.page-nav .app-menu li { float: none; }
+
+
+
+/***** Miscellaneous Styles *****/
+.provider-name { font-weight: bold; }
+.practice-name, .practice-phone { color: #bbb; font-style: italic; }
+.notes { color: #a44; font-style: italic; }
+.notes [class^="icon-"] { font-size: 1.2em; line-height: 1.25; }
+.search-keywords { display: none; }
+.the-main-point { color: #a44; font-size: 1.2em; }
+
+/* Presence indicators (IE-only) */
+.ms-imnImg {
+	border: none;
+	height: auto;
+	width: 12px;
+}
+
+
+
+/***** Clearfix *****/
+.container:before,
+.container:after {
+	content: "";
+	display: table;
+}
+.container:after {
+	clear: both;
+}
+.container {
+	zoom: 1;   /* IE7 */
+}

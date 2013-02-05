@@ -1,0 +1,11 @@
+<div class="result-icon" title="Click to edit or delete">
+	<i class="icon-user"></i>
+</div>
+<div class="result-content">
+	<strong>{{FirstName}} {{LastName}}</strong>
+	{{#if JobTitle}}{{separator}} {{JobTitle}}{{/if}}
+	<br>
+	{{#if DirectPhone}}{{DirectPhone}}{{/if}}
+	{{#if Extension}}{{separator}} x{{Extension}} {{/if}}
+	{{#if EMailAddress}}{{separator}} <a href="mailto:{{EMailAddress}}">{{EMailAddress}}</a>{{/if}}
+</div>
