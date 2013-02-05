@@ -8,7 +8,7 @@ There's a double entendre here: it's a reference application in the sense that I
 
 This is an example application, more complex than the many To-Do sample apps out there, but still simple enough for one developer to comprehend. I'm putting it out there as a resource.
 
-This is *not* a finished application that you can drop in place and use as-is. You might be able to use it as a kind of boilerplate to jump-start your development, but it's not really done with that in mind. And it's not a library you'll want to build on top of. Also, the (few) image 
+This is *not* a finished application that you can drop in place and use as-is. You might be able to use it as a kind of boilerplate to jump-start your development, but it's not really done with that in mind. And it's not a library you'll want to build on top of.
 
 I really mean for it to be primarily a learning resource. I learned a *ton* of stuff building it, but I also struggled at times because I couldn't find a resource like this. Hopefully I can smooth out the learning curve for someone else.
 
