@@ -35,6 +35,7 @@ These are a few resources that I've found particularly helpful:
 * [Patterns For Large-Scale JavaScript Application Architecture](http://addyosmani.com/largescalejavascript/) by Addy Osmani
 * [Marionette Docs](https://github.com/marionettejs/backbone.marionette/wiki)
 * [Backbone Fundamentals](https://github.com/addyosmani/backbone-fundamentals) by Addy Osmani
+* [Design Patterns](http://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612/ref=sr_1_1?s=books&ie=UTF8&qid=1360258565&sr=1-1&keywords=gang+of+four+book) A.K.A. the "Gang of Four book"
 
 
 
